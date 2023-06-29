@@ -6,20 +6,14 @@ app_paths=(
 	"/System/Applications/Launchpad.app"
    	"/Applications/Google Chrome.app"
    	"/Applications/Slack.app"
-    "/Applications/Microsoft Word.app"
-    
-    "/Applications/Safari.app" 
-    "/Applications/Visual Studio Code.app"
-    # "/Applications/Microsoft Excel.app"
-	# "/Applications/Google Drive.app"
-	# "/Applications/zoom.us.app" 
+    	"/Applications/Microsoft Word.app"
+   	 #"/Applications/Safari.app" 
+    	#"/Applications/Visual Studio Code.app"
+    	"/Applications/Microsoft Excel.app"
+	"/Applications/Google Drive.app"
+	"/Applications/zoom.us.app" 
 	"/System/Applications/System Settings.app"
-)
-
-
-
-
-
+) 
 dock_plist="$HOME/Library/Preferences/com.apple.dock.plist"  
 # Function to check if Safari is in the persistent-apps array
 map_is_in_dock() {

@@ -1,18 +1,17 @@
 # dockList
-App Dir
-"/System/Applications/Launchpad.app"
-"/Applications/Google Chrome.app"
-"/Applications/Slack.app" 
-"/Applications/Google Drive.app"
-"/Applications/zoom.us.app" 
-"/Applications/Microsoft Word.app"
-"/System/Applications/System Settings.app"
-"/Applications/Safari.app" 
-"/Applications/Visual Studio Code.app"
-"/Applications/Microsoft Excel.app"
 
-Mosyle 
+# App Dir
+"/System/Applications/Launchpad.app" <br />
+"/Applications/Google Chrome.app" <br />
+"/Applications/Slack.app" <br />
+"/Applications/Google Drive.app" <br />
+"/Applications/zoom.us.app" <br />
+"/Applications/Microsoft Word.app" <br />
+"/System/Applications/System Settings.app" <br />
+"/Applications/Safari.app" <br />
+"/Applications/Visual Studio Code.app" <br />
 
+# Mosyle command
 #!/bin/bash
 mkdir /tmp/dock
 cd /tmp/dock

@@ -1,4 +1,5 @@
 # dockList
+https://github.com/haophan1996/dockList
 
 # App Dir
 "/System/Applications/Launchpad.app" <br />
@@ -12,11 +13,11 @@
 "/Applications/Visual Studio Code.app" <br />
 
 # Mosyle command
-#!/bin/bash
-mkdir /tmp/dock
-cd /tmp/dock
-curl -l -O /tmp/dock/Docklist.command  "Link_custom_Dock"
-chmod +x Docklist.command  
-sudo -u $(stat -f "%Su" /dev/console) /bin/sh <<'END'
-cp "/tmp/Dock/Docklist.command" "$HOME/Desktop"
-rm -rf /tmp/dock
+#!/bin/bash <br />
+mkdir /tmp/dock <br />
+cd /tmp/dock <br />
+curl -l -O /tmp/dock/Docklist.command  "Link_custom_Dock" <br />
+chmod +x Docklist.command <br />
+sudo -u $(stat -f "%Su" /dev/console) /bin/sh <<'END' <br />
+cp "/tmp/Dock/Docklist.command" "$HOME/Desktop" <br />
+rm -rf /tmp/dock <br />

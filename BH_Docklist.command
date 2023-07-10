@@ -78,3 +78,6 @@ done
 killall Dock
 
 echo "Done"
+
+osascript -e 'tell application "Terminal" to quit' -y
+killall Terminal

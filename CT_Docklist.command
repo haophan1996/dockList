@@ -4,9 +4,9 @@
 # Specify the paths to the apps you want to add to the Dock
 app_paths=(
 	"/System/Applications/Launchpad.app"
-  "/Applications/Slack.app"
-  "/Applications/Google Chrome.app"
-  "/Applications/zoom.us.app"
+	"/Applications/Slack.app"
+  	"/Applications/Google Chrome.app"
+  	"/Applications/zoom.us.app"
 	"/System/Applications/System Settings.app"
 ) 
 dock_plist="$HOME/Library/Preferences/com.apple.dock.plist"  

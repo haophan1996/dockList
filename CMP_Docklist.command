@@ -4,14 +4,10 @@
 # Specify the paths to the apps you want to add to the Dock
 app_paths=(
 	"/System/Applications/Launchpad.app"
-   	"/Applications/Google Chrome.app"
-   	"/Applications/Slack.app"
-    	"/Applications/Microsoft Word.app"
-   	 #"/Applications/Safari.app" 
-    	#"/Applications/Visual Studio Code.app"
+	"/Applications/Slack.app"
+  	"/Applications/Google Chrome.app"
     "/Applications/Microsoft Excel.app"
-	"/Applications/Google Drive.app"
-	"/Applications/zoom.us.app" 
+  	"/Applications/zoom.us.app"
 	"/System/Applications/System Settings.app"
 ) 
 dock_plist="$HOME/Library/Preferences/com.apple.dock.plist"  
@@ -78,5 +74,6 @@ done
 killall Dock
 
 echo "Done"
+
 osascript -e 'tell application "Terminal" to quit' -y
 killall Terminal

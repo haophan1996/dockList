@@ -1,3 +1,12 @@
+*___Check app is installed
+appname="App_name.app"
+if find /Applications -iname "$appname" -maxdepth 1 -type d | grep -q "$appname"; then
+    echo "$appname is installed."
+else
+    echo "$appname is not installed."
+fi
+
+
 *   Script Dock
 
 #!/bin/bash
@@ -69,6 +78,82 @@ unzip Postman.zip
 mv "Postman.app" /Applications
 rm -rf Postman.zip 
 rm -rf Postman.app
+
+* Script Github Desktop
+
+#!/bin/bash
+cd /tmp 
+rm -rf GithubDesktop.zip 
+if [[ $(uname -m) == 'arm64' ]]; then
+    curl -L -o /tmp/GithubDesktop.zip "https://central.github.com/deployments/desktop/desktop/latest/darwin-arm64"
+else
+    curl -L -o /tmp/GithubDesktop.zip "https://central.github.com/deployments/desktop/desktop/latest/darwin"
+fi
+unzip GithubDesktop.zip 
+mv "GitHub Desktop.app" /Applications
+rm -rf GithubDesktop.zip 
+rm -rf GitHub\ Desktop.app
+
+* Script Absract
+
+#!/bin/bash
+cd /tmp 
+rm -rf Abstract.zip 
+curl -L -o /tmp/Abstract.zip "https://api.goabstract.com/releases/latest/download"
+unzip Abstract.zip 
+mv "Abstract.app" /Applications
+rm -rf Abstract.zip 
+rm -rf Abstract.app
+
+* Script Zeplin
+
+#!/bin/bash
+cd /tmp 
+rm -rf Zeplin.zip 
+curl -L -o /tmp/Zeplin.zip "https://zpl.io/download-mac"
+unzip Zeplin.zip
+mv "Zeplin.app" /Applications
+rm -rf Zeplin.zip 
+rm -rf Zeplin.app
+
+* Script Sketch
+ 
+#!/bin/bash
+url="https://www.sketch.com/downloads/mac/"
+download_url=$(curl -s "$url" | grep -o 'https://download\.sketch\.com/sketch[^"]*' | sed -n '2p')
+if [ -n "$download_url" ]; then
+    echo "Download URL: $download_url"
+    cd /tmp 
+    rm -rf Sketch.zip 
+    curl -L -o /tmp/Sketch.zip $download_url
+    unzip Sketch.zip
+    mv "Sketch.app" /Applications
+    rm -rf Sketch.zip 
+    rm -rf Sketch.app
+else
+  echo "Failed to retrieve the download link."
+fi
+
+* Script Optimizely
+
+#!/bin/bash
+cd /tmp 
+curl -L -o /tmp/Optimizely.dmg "http://app.optimizely.com/desktop/download?platform=mac"
+hdiutil attach Optimizely.dmg
+mv /Volumes/Optimizely/Optimizely.app /Applications 
+hdiutil detach /Volumes/Optimizely
+rm -rf Optimizely.dmg
+
+* Script install truly
+
+#!/bin/bash
+cd /tmp 
+curl -L -o /tmp/Truly.dmg "https://s3.amazonaws.com/truly-app-upgrade-files/desktop-app/Truly-1.4.1-universal.dmg"
+hdiutil attach Truly.dmg
+mv /Volumes/Optimizely/Truly.app /Applications 
+hdiutil detach /Volumes/Truly
+rm -rf Truly.dmg
+
 
 * Script Pycham CE
 

@@ -23,6 +23,9 @@ cp "/tmp/Dock/Docklist.command" "$HOME/Desktop" <br />
 rm -rf /tmp/dock <br />
 
 
+
+-----
+
 current_ip=$(curl -s https://api64.ipify.org)
 target_ip=""
 

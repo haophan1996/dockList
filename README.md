@@ -21,3 +21,12 @@ chmod +x Docklist.command <br />
 sudo -u $(stat -f "%Su" /dev/console) /bin/sh <<'END' <br />
 cp "/tmp/Dock/Docklist.command" "$HOME/Desktop" <br />
 rm -rf /tmp/dock <br />
+
+
+current_ip=$(curl -s https://api64.ipify.org)
+target_ip=""
+
+if [ "$current_ip" != "$target_ip" ]; then
+    echo "Not at pixel"
+    exit 1
+fi

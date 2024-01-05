@@ -52,6 +52,7 @@ for app_path in "${app_paths[@]}"; do
 done 
 killall Dock 
 echo "Done"
-
+clear
 osascript -e 'tell application "Terminal" to quit' -y
+clear
 killall Terminal

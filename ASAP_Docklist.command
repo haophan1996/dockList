@@ -6,7 +6,7 @@ app_paths=(
 	"/System/Applications/Launchpad.app"
    	"/Applications/Firefox.app"
    	"/Applications/Slack.app"
-   	"/Applications/Safari.app" 
+   	#"/Applications/Safari.app" 
     	#"/Applications/Visual Studio Code.app"
 	"/Applications/Microsoft Word.app"
     	"/Applications/Microsoft Excel.app"

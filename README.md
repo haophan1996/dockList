@@ -7,6 +7,7 @@ https://github.com/haophan1996/dockList
 "/Applications/Slack.app" <br />
 "/Applications/Google Drive.app" <br />
 "/Applications/zoom.us.app" <br />
+"/Applications/Microsoft Excel.app"
 "/Applications/Microsoft Word.app" <br />
 "/System/Applications/System Settings.app" <br />
 "/Applications/Safari.app" <br />

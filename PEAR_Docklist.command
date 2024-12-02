@@ -10,7 +10,7 @@ app_paths=(
     	#"/Applications/Microsoft Word.app"
    	 #"/Applications/Safari.app" 
     	#"/Applications/Visual Studio Code.app"
-    "/Applications/Microsoft Excel.app"
+    #"/Applications/Microsoft Excel.app"
 	"/Applications/Google Drive.app"
 	"/Applications/zoom.us.app" 
 	"/System/Applications/System Settings.app"

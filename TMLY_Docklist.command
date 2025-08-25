@@ -10,7 +10,7 @@ app_paths=(
    	#"/Applications/Safari.app" 
     #"/Applications/Visual Studio Code.app"
     #"/Applications/Microsoft Excel.app"
-	"/Applications/Notion.app"
+	"$HOME/Applications/Notion.app"
 	"/Applications/zoom.us.app" 
 	"/System/Applications/System Settings.app"
 ) 

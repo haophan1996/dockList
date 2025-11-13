@@ -6,7 +6,7 @@ app_paths=(
 	  "/System/Applications/Launchpad.app"
 	  "/Applications/Google Chrome.app"
    	  #"/Applications/Slack.app"
-    	  "/Applications/Microsoft Teams Classic.app"
+    	  "/Applications/Microsoft Teams.app"
           "/Applications/OneDrive.app"
    	  #"/Applications/Safari.app" 
           "/Applications/Microsoft Word.app" 

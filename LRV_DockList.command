@@ -1,6 +1,6 @@
 #!/bin/bash  
 app_paths=(
-	"/System/Applications/Launchpad.app"
+	"/System/Applications/Apps.app"
    	"/Applications/Google Chrome.app"
    	"/Applications/Microsoft Word.app" 
     "/Applications/Microsoft To Do.app"

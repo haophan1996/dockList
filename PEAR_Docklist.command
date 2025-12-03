@@ -3,7 +3,7 @@
 
 # Specify the paths to the apps you want to add to the Dock
 app_paths=(
-	"/System/Applications/Launchpad.app"
+	"/System/Applications/Apps.app"
    	"/Applications/Google Chrome.app"
 	"/Applications/Firefox.app"
    	"/Applications/Slack.app"

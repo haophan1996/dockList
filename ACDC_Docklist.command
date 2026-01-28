@@ -5,6 +5,7 @@
 app_paths=(
 	"/System/Applications/Apps.app"
    	"/Applications/Google Chrome.app"
+    "/Applications/Microsoft To Do.app"
     "/Applications/zoom.us.app" 
     "/Applications/Self-Service.app"  
 	"/System/Applications/System Settings.app"
